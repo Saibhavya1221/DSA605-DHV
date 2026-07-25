@@ -1,0 +1,27 @@
+# Dataset
+month <- c("Jan","Feb","Mar","Apr","May")
+sales <- c(15000,18000,22000,20000,23000)
+
+# Line Chart
+plot(sales, type="o", xaxt="n", col="blue",
+     xlab="Month", ylab="Sales ($)",
+     main="Monthly Sales")
+axis(1, at=1:5, labels=month)
+
+# Bar Chart
+product <- c("A","B","C","D","E")
+product_sales <- c(50000,42000,61000,38000,47000)
+
+barplot(product_sales, names.arg=product,
+        col="skyblue",
+        main="Top Selling Products",
+        xlab="Products", ylab="Sales ($)")
+
+# Scatter Plot
+ad_budget <- c(2000,2500,3000,2800,3500)
+
+plot(ad_budget, sales,
+     pch=19, col="red",
+     xlab="Advertising Budget ($)",
+     ylab="Sales ($)",
+     main="Advertising Budget vs Sales")
